@@ -51,6 +51,7 @@ cp systemd/rclone-activity.service ~/.config/systemd/user/
 cp systemd/rclone-remote-activity.service ~/.config/systemd/user/
 cp scripts/rclone-activity-watch.sh ~/.local/bin/
 cp scripts/rclone-remote-activity-watch.sh ~/.local/bin/
+cp scripts/rclone-latest-activity.sh ~/.local/bin/
 chmod +x ~/.local/bin/rclone-*-watch.sh
 systemctl --user daemon-reload
 systemctl --user enable --now rclone-onedrive.service
