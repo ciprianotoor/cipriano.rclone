@@ -1,0 +1,12 @@
+[Unit]
+Description=Detect remote OneDrive changes for the rclone bar plugin
+After=rclone-onedrive.service
+Requires=rclone-onedrive.service
+
+[Service]
+ExecStart=%h/.local/bin/rclone-remote-activity-watch.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

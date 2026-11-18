@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "cipriano.rclone",
+  "name": "Rclone",
+  "version": "1.0.0",
+  "author": "Cipriano",
+  "license": "MIT",
+  "description": "Monitor rclone activity and open the rclone web interface",
+  "kinds": ["bar-widget", "panel"],
+  "keepLoaded": true,
+  "entryPoints": { "barWidget": "BarWidget.qml", "panel": "Panel.qml" },
+  "barWidget": { "displayName": "Rclone", "description": "Rclone status and activity", "category": "System", "allowMultiple": false, "defaultSection": "right" }
+}

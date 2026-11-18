@@ -1,0 +1,12 @@
+[Unit]
+Description=Watch OneDrive file activity for the rclone bar plugin
+After=rclone-onedrive.service
+Requires=rclone-onedrive.service
+
+[Service]
+ExecStart=%h/.local/bin/rclone-activity-watch.sh
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target
