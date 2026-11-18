@@ -91,7 +91,7 @@ Panel {
   }
   Process { id: openActivity; command: ["xdg-open", root.lastPath]; onExited: root.lastAction = "Actividad abierta" }
   readonly property string homeActivityLog: Quickshell.env("HOME") + "/.local/state/rclone/activity.log"
-  Timer { interval: 5000; running: true; repeat: true; onTriggered: root.refresh() }
+  Timer { interval: 1000; running: true; repeat: true; onTriggered: root.refresh() }
   Component.onCompleted: refresh()
   KeyboardPanel {
     id: panel
