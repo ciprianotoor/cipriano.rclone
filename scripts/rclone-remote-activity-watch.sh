@@ -20,5 +20,5 @@ while :; do
     tail -n 50 "$log_file" > "$log_file.tmp" && mv "$log_file.tmp" "$log_file"
   fi
   mv "$next" "$snapshot"
-  sleep 15
+  sleep 5
 done

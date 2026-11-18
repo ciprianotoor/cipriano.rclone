@@ -85,7 +85,7 @@ Para usar otra nube, configura el remoto con `rclone config` y cambia `onedrive:
 - **Abrir carpeta**: abre `/OneDrive`.
 - **Última actividad**: abre la ruta del último archivo detectado.
 
-La detección remota se consulta cada 15 segundos. Las transferencias rápidas pueden no permanecer visibles en la cola, pero los cambios detectados se guardan en el registro y generan una notificación.
+La detección remota se consulta cada 5 segundos. Las transferencias rápidas pueden no permanecer visibles en la cola, pero los cambios detectados se guardan en el registro y generan una notificación.
 
 ## Diagnóstico
 
