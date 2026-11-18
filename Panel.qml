@@ -26,7 +26,12 @@ Panel {
   function openFromHotkey() { root.controller.show(); refresh() }
   function toggle() { opened ? close() : openFromHotkey() }
   function close() { root.controller.hide() }
-  function refresh() { serviceCheck.running = true; stats.running = true; log.running = true }
+  function refresh() {
+    serviceCheck.running = true
+    stats.running = true
+    log.running = false
+    Qt.callLater(function() { log.running = true })
+  }
   function openWeb() { root.lastAction = "Interfaz web abierta"; if (root.bar) root.bar.run("xdg-open http://127.0.0.1:5572") }
   Process {
     id: serviceCheck
