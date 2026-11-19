@@ -72,7 +72,7 @@ Panel {
   }
   Process {
     id: log
-    command: ["/home/cipriano/.local/bin/rclone-latest-activity.sh"]
+    command: [Quickshell.env("HOME") + "/.local/bin/rclone-latest-activity.sh"]
     stdout: StdioCollector {
       onStreamFinished: {
         var lines = text.trim().split("\n")
