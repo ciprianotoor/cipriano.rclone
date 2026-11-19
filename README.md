@@ -78,6 +78,33 @@ Registro:     ~/.local/state/rclone/activity.log
 
 Para usar otra nube, configura el remoto con `rclone config` y cambia `onedrive:` en el servicio. El botón **Interfaz web** abre la consola de rclone, donde puedes añadir y autorizar otros remotos.
 
+## Configuración asistida con Codex
+
+Copia este prompt en Codex para configurar el plugin de forma interactiva:
+
+```text
+Configura este plugin de rclone para Omarchy conmigo. Lee el README y revisa
+el estado actual antes de cambiar nada. Hazme preguntas y espera mis respuestas:
+
+1. ¿Qué remoto de rclone debo usar? Comprueba los nombres con `rclone listremotes`;
+   el valor predeterminado es `onedrive:`.
+2. ¿Mantengo el punto de montaje `/OneDrive`?
+3. ¿Quieres que añada `cipriano.rclone` a la barra derecha?
+4. ¿Quieres que instale y habilite los servicios de usuario para que arranquen
+   automáticamente?
+
+No me pidas contraseñas ni tokens. No leas, muestres ni copies
+`~/.config/rclone/rclone.conf`. Si falta el remoto, guíame para crearlo y
+autorizarlo con `rclone config` en mi equipo.
+
+Antes de editar configuraciones, copiar archivos, instalar dependencias o
+habilitar/iniciar servicios, explícame los cambios y pide mi confirmación.
+Si elijo un remoto o punto de montaje distinto, actualiza todas las referencias
+relacionadas en servicios, scripts y plugin. Mantén la API RC en
+`127.0.0.1`; no la expongas a la red. Al terminar, comprueba los servicios y
+el montaje e informa claramente de cualquier error.
+```
+
 ## Uso
 
 - Clic izquierdo o derecho en el icono: abre el panel.
