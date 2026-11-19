@@ -34,11 +34,12 @@ rclone listremotes
 ### 1. Instalar el plugin
 
 ```bash
-mkdir -p ~/.config/omarchy/plugins
-cp -r cipriano.rclone ~/.config/omarchy/plugins/
+mkdir -p ~/.config/omarchy/plugins/rclone.activity
+cp BarWidget.qml Panel.qml manifest.json ~/.config/omarchy/plugins/rclone.activity/
+cp -r scripts systemd ~/.config/omarchy/plugins/rclone.activity/
 ```
 
-Añade `cipriano.rclone` a la sección `bar.layout.right` de `~/.config/omarchy/shell.json`.
+Añade `rclone.activity` a la sección `bar.layout.right` de `~/.config/omarchy/shell.json`.
 
 ### 2. Instalar el servicio de montaje
 
@@ -89,7 +90,7 @@ el estado actual antes de cambiar nada. Hazme preguntas y espera mis respuestas:
 1. ¿Qué remoto de rclone debo usar? Comprueba los nombres con `rclone listremotes`;
    el valor predeterminado es `onedrive:`.
 2. ¿Mantengo el punto de montaje `/OneDrive`?
-3. ¿Quieres que añada `cipriano.rclone` a la barra derecha?
+3. ¿Quieres que añada `rclone.activity` a la barra derecha?
 4. ¿Quieres que instale y habilite los servicios de usuario para que arranquen
    automáticamente?
 
@@ -134,7 +135,7 @@ systemctl --user restart rclone-onedrive.service
 ## Estructura
 
 ```text
-cipriano.rclone/
+rclone.activity/
 ├── BarWidget.qml
 ├── Panel.qml
 ├── manifest.json

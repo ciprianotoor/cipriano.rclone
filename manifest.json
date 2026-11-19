@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "cipriano.rclone",
+  "id": "rclone.activity",
   "name": "Rclone",
   "version": "1.0.0",
-  "author": "Cipriano",
   "license": "MIT",
   "description": "Monitor rclone activity and open the rclone web interface",
   "kinds": ["bar-widget", "panel"],

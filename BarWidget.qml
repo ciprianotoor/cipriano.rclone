@@ -4,7 +4,7 @@ import qs.Ui
 
 BarWidget {
   id: root
-  moduleName: "cipriano.rclone"
+  moduleName: "rclone.activity"
   function injectPanel() { var t = panelLoader.item; if (!t) return; t.bar = root.bar; t.anchorItem = button; t.hostWidget = root }
   readonly property bool opened: panelLoader.item ? panelLoader.item.opened : false
   function open() { if (panelLoader.item) panelLoader.item.openFromHotkey() }
