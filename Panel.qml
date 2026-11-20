@@ -118,7 +118,7 @@ Panel {
         Text { text: "󰆼"; textFormat: Text.PlainText; color: Commons.Color.accent; font.pixelSize: 30 }
         Column {
           spacing: Style.space(2)
-          Text { text: "RCLONE"; textFormat: Text.PlainText; color: root.bar.foreground; font.pixelSize: Style.font.pixelSizeLarge; font.bold: true }
+          Text { text: "RCLONE"; textFormat: Text.PlainText; color: root.bar.foreground; font.pixelSize: Style.font.title; font.bold: true }
           Text { text: "OneDrive"; textFormat: Text.PlainText; color: Qt.darker(root.bar.foreground, 1.35); font.pixelSize: 12 }
         }
         Item { Layout.fillWidth: true }
